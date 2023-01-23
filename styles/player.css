@@ -1,0 +1,95 @@
+.player_container {
+  background-color: #202130;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+}
+.player_container .player_image {
+  width: 5vw;
+  height: 5vw;
+  position: relative;
+}
+.player_container .navigation {
+  display: block;
+  height: 0.5em;
+  background-color: white;
+  width: 95vw;
+}
+.player_container .navigation .seek_bar {
+  height: 0.5rem;
+  background-color: #d90429;
+  position: relative;
+}
+.player_container .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player_container .controls .pp {
+  color: #d90429;
+  font-size: 2em;
+}
+.player_container .controls .skip_button {
+  padding: 5px 5px 0 5px;
+  font-size: 1.5em;
+}
+
+.queue_music {
+  display: flex;
+}
+.queue_music span {
+  padding: 1em;
+  background-color: red;
+  margin: 1em;
+}
+
+.dropdown {
+  position: absolute;
+  right: 1vw;
+  top: 4vh;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  height: auto;
+  max-height: 60vh;
+  overflow: hidden;
+  font-size: 1rem;
+  position: absolute;
+  background-color: #202130;
+  color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 0.5em;
+  z-index: 100;
+  bottom: 0;
+  right: 0;
+  border-radius: 1em;
+  overflow-y: scroll;
+}
+.dropdown-content .span {
+  padding: 0.5rem;
+  margin: 10px;
+}
+.dropdown-content .close_ico {
+  position: absolute;
+  right: 10px;
+  font-size: 1em;
+  top: 10px;
+  color: red;
+}
+
+.queue_con {
+  width: 30vw;
+}
+.queue_con td {
+  padding: 0.2rem;
+}
+
+.player {
+  position: relative;
+}/*# sourceMappingURL=player.css.map */

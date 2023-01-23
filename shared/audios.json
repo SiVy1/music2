@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "music": [
+    {
+      "title": "name",
+      "url": "/music/1.mp3"
+    },
+    {
+      "title": "name2",
+      "url": "/music/2.mp3"
+    }
+  ]
+}

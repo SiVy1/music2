@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none;
+  scrollbar-color: #ffffff #1b1d2e;
+  font-family: "Outfit", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1b1d2e;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 0px solid #ffffff;
+}
+
+body {
+  background-color: #2b2d42;
+  color: white;
+}
+
+.loader-con {
+  color: #fff;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  height: 100vh;
+  background-image: url("/loading.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+  display: flex;
+}
+.loader-con span {
+  margin-top: 4vh;
+}
+.loader-con .left {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  max-width: 50vw;
+  flex-direction: column;
+  margin: 0 2vw 0 2vw;
+}
+.loader-con .loading-span {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  font-size: 1vw;
+}
+.loader-con .title {
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.loader-con .right {
+  position: relative;
+  min-width: 50vw;
+}
+.loader-con .right .note1 {
+  position: absolute;
+  top: 20%;
+  font-size: 5vh;
+  left: 70%;
+  rotate: -10deg;
+  -webkit-animation: levitation 4s linear infinite;
+          animation: levitation 4s linear infinite;
+}
+.loader-con .right .note2 {
+  position: absolute;
+  top: 90%;
+  font-size: 5vh;
+  left: 10%;
+  rotate: 20deg;
+  -webkit-animation: levitation 3s linear infinite;
+          animation: levitation 3s linear infinite;
+}
+.loader-con .right .girl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  position: relative;
+  -webkit-animation: levitation 5s linear infinite;
+          animation: levitation 5s linear infinite;
+}
+
+.loader {
+  width: 8vh;
+  height: 8vh;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 6px solid #d90429;
+  border-right: 6px solid transparent;
+  box-sizing: border-box;
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
+  margin-top: 1vh;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes levitation {
+  0% {
+    transform: scale(0vh);
+  }
+  50% {
+    transform: scale(10vh);
+  }
+  100% {
+    transform: scale(0vh);
+  }
+}
+@keyframes levitation {
+  0% {
+    transform: scale(0vh);
+  }
+  50% {
+    transform: scale(10vh);
+  }
+  100% {
+    transform: scale(0vh);
+  }
+}
+.register_con {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/register.jpeg");
+  background-size: cover;
+}
+
+.form_con {
+  position: relative;
+  padding: 5vh 5vw;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(281deg, rgba(0, 0, 0, 0.9) 0%, rgba(12, 83, 128, 0.9) 0%, rgba(67, 25, 68, 0.9) 100%);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.form_con .register_label {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 3vh;
+}
+.form_con .register_label .register_input {
+  border: none;
+  width: 20vw;
+  height: 4vh;
+  background-color: rgb(255, 255, 255);
+  font-size: 2vh;
+}
+.form_con .register_label .input_error {
+  border: none;
+  background-color: #ca6979;
+  border-bottom: 3px solid #d90429;
+  width: 20vw;
+  height: 4vh;
+  font-size: 2vh;
+}
+.form_con .register_label .error_message {
+  font-weight: 500;
+  font-size: 2vh;
+}
+.form_con .sumbit_con {
+  margin-top: 1vh;
+}
+.form_con .sumbit_con .submit {
+  all: unset;
+  padding: 1vh 1vw;
+  background-color: #d90429;
+  font-size: 2vh;
+}
+
+.form_con::before {
+  content: "";
+  position: absolute;
+  width: 20vh;
+  height: 20vh;
+  background-color: red;
+  top: 0;
+  left: 0;
+  filter: blur(7vh);
+  z-index: 0;
+}
+
+.form_con::after {
+  content: "";
+  position: absolute;
+  width: 20vh;
+  height: 20vh;
+  background-color: aqua;
+  bottom: 0;
+  right: 0;
+  filter: blur(7vh);
+}
+
+.navbar-con {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.navbar-con * {
+  margin: 5px;
+}
+.navbar-con .bell-ico {
+  font-size: 30px;
+  color: white;
+}
+.navbar-con input {
+  height: 30px;
+  width: 20%;
+}
+.navbar-con .image-con {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.navbar-con .image-con .options {
+  position: absolute;
+  bottom: 0;
+}
+.navbar-con .image-con img {
+  border-radius: 100%;
+}
+
+.playlist_container {
+  width: 100%;
+}
+.playlist_container .playlist_hero {
+  position: relative;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.playlist_container .playlist_hero img {
+  z-index: -1;
+}
+.playlist_container .playlist_hero .playlist_title {
+  padding: 1rem;
+}
+.playlist_container .playlist_hero .playlist_buttons {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playlist_container .playlist_hero .playlist_buttons button {
+  all: unset;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.playlist_container .playlist_hero .playlist_buttons button:nth-child(1) {
+  font-size: 3rem;
+}
+
+.playlist_table {
+  width: 100vw;
+}
+.playlist_table .playlist_tr td {
+  padding: 0.5rem;
+}
+
+.table_image {
+  position: relative;
+  width: 1em;
+}
+
+.table_ico {
+  font-size: 2rem;
+}
+
+.table_con {
+  width: 100%;
+}/*# sourceMappingURL=globals.css.map */
